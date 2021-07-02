@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saumik's Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .container {
+            background-color:#d0b9b2;
+            display: block;
+            margin: 20px auto;
+            width: 400px;
+            height: 407px;
+            border: 2px solid black;
+            border-radius: 12px;
+        }
+
+        .output {
+            background-color: #d8d8d8;
+            width: 354px;
+            height: 88px;
+            margin: 10px;
+            border: 2px solid black;
+            border-radius: 12px;
+        }
+
+        .btn {
+            width: 56px;
+            margin: 6px 7px;
+        }
+        #smalloutput{
+            position: relative;
+            left:123px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top:10px;
+            width: 100px;
+            height: 50px;
+        }
+        #equate{
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            left:243px;
+            border:2px solid black;
+            border-radius: 5px;
+            width: 100px;
+            height: 24px;
+        }
+        #Name{
+            position: relative;
+            font-family: cursive;
+            font-weight: bold;
+            left:139px;
+        }
+    </style>
+     
+</head>
+
+<body>
+    <div class="container">
+        <div class="output" id="outputtag">
+            <div id="smalloutput">
+
+            </div>
+            <div id="equate"></div>
+        </div>
+        <p>
+            <button type="button" class="btn btn-secondary">1</button>
+            <button type="button" class="btn btn-secondary">2</button>
+            <button type="button" class="btn btn-secondary">3</button>
+            <button type="button" class="btn btn-dark">+</button>
+            <button type="button" class="btn btn-dark">-</button>
+        </p>
+        <p>
+            <button type="button" class="btn btn-secondary">4</button>
+            <button type="button" class="btn btn-secondary">5</button>
+            <button type="button" class="btn btn-secondary">6</button>
+            <button type="button" class="btn btn-dark">/</button>
+            <button type="button" class="btn btn-dark">*</button>
+        </p>
+        <p>
+            <button type="button" class="btn btn-secondary">7</button>
+            <button type="button" class="btn btn-secondary">8</button>
+            <button type="button" class="btn btn-secondary">9</button>
+            <button type="button" class="btn btn-dark" onclick="root()">Sqrt</button>
+            <button type="button" class="btn btn-dark" onclick="sqr()">x^2</button>
+        </p>
+        <p>
+            <button type="button" class="btn btn-success" onclick="solve()">=</button>
+            <button type="button" class="btn btn-secondary">0</button>
+            <button type="button" class="btn btn-dark">.</button>
+            <button type="button" class="btn btn-danger">C</button>
+            <button type="button" class="btn btn-dark">%</button>
+        </p>
+        <p id="Name">&#169 Saumik</p>
+    </div>
+    
+
+</body>
+<script src="functions.js"></script>
+
+</html>
